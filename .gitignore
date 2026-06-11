@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude Code project metadata
+.claude/
+
+# Source/raw assets (client photos, documents, archives — large binaries, not for version control)
+source/
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
