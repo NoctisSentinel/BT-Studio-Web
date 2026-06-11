@@ -6,8 +6,11 @@
 # Claude Code project metadata
 .claude/
 
-# Source/raw assets (client photos, documents, archives — large binaries, not for version control)
-source/
+# Original raw assets (client photos, documents, archives — large binaries, not for version control)
+source-ori/
+
+# Wrangler cache
+.wrangler/
 
 # Editor
 .vscode/

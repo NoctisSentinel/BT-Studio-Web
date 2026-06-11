@@ -1,0 +1,7 @@
+# Original raw asset folder (not served by the website)
+source-ori/
+
+# Dev files
+.git/
+.claude/
+human-comm/
