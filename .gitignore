@@ -9,6 +9,9 @@
 # Original raw assets (client photos, documents, archives — large binaries, not for version control)
 source-ori/
 
+# Dev notes
+project-memo.md
+
 # Wrangler cache
 .wrangler/
 
