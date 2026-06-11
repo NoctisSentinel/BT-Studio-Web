@@ -3,6 +3,7 @@
 白棠影像造型工作室官方網站，位於台中南屯，提供韓式證件照、職業形象照、全家福寫真及妝髮造型服務。
 
 **網站網址：** [bt-studio.nox-ai.net](https://bt-studio.nox-ai.net)
+**備用網址：** [noctissentinel.github.io/BT-Studio-Web](https://noctissentinel.github.io/BT-Studio-Web/)
 
 ---
 
