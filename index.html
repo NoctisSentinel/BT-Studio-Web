@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BT Studio 白棠影像造型工作室｜台中南屯 韓式證件照・形象照・妝髮造型</title>
-  <meta name="description" content="BT Studio 白棠影像造型工作室，位於台中南屯，專業韓式證件照、職業形象照、全家福寫真、妝髮造型服務。全預約制，獨立空間，高級感攝影體驗。">
+  <title></title>
+  <meta name="description" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
@@ -18,11 +18,11 @@
       <img src="source/BT網站資料/BT Studio/BT LOGO 1png.png" alt="BT Studio">
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#services">服務項目</a></li>
-      <li><a href="#portfolio">作品展示</a></li>
-      <li><a href="#pricing">價格方案</a></li>
-      <li><a href="#booking">預約諮詢</a></li>
-      <li><a href="#about">關於我們</a></li>
+      <li><a href="#services"  data-t="nav.services"></a></li>
+      <li><a href="#portfolio" data-t="nav.portfolio"></a></li>
+      <li><a href="#pricing"   data-t="nav.pricing"></a></li>
+      <li><a href="#booking"   data-t="nav.booking"></a></li>
+      <li><a href="#about"     data-t="nav.about"></a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
       <span></span><span></span><span></span>
@@ -33,33 +33,28 @@
   <!-- ═══ SECTION 1 · 首頁 HERO ═══ -->
   <section id="hero">
     <div class="hero-collage">
-      <!-- col 1 -->
       <div class="hero-col">
         <img src="source/BT網站資料/環境圖/5M170892.jpg" alt="BT Studio 環境">
         <img src="source/BT網站資料/環境圖/5M170893.jpg" alt="BT Studio 環境">
       </div>
-      <!-- col 2 -->
       <div class="hero-col">
         <img src="source/BT網站資料/環境圖/5M170896.jpg" alt="BT Studio 環境">
         <img src="source/BT網站資料/環境圖/5M170901.jpg" alt="BT Studio 環境">
       </div>
-      <!-- col 3 · brand centre -->
       <div class="hero-col hero-col--center">
         <div class="hero-brand">
           <img src="source/BT網站資料/BT Studio/BT LOGO 1png.png" alt="BT Studio" class="hero-logo">
-          <p class="hero-tagline">光影之美・永恆瞬間</p>
+          <p class="hero-tagline" data-t="hero.tagline"></p>
           <div class="hero-ctas">
-            <a href="#services" class="btn btn--outline">探索服務</a>
-            <a href="#booking" class="btn btn--gold">立即預約</a>
+            <a href="#services" class="btn btn--outline" data-t="hero.cta_explore"></a>
+            <a href="#booking"  class="btn btn--gold"    data-t="hero.cta_book"></a>
           </div>
         </div>
       </div>
-      <!-- col 4 -->
       <div class="hero-col">
         <img src="source/BT網站資料/環境圖/5M170908.jpg" alt="BT Studio 環境">
         <img src="source/BT網站資料/環境圖/5M170912.jpg" alt="BT Studio 環境">
       </div>
-      <!-- col 5 -->
       <div class="hero-col">
         <img src="source/BT網站資料/環境圖/5M170916.jpg" alt="BT Studio 環境">
         <img src="source/BT網站資料/環境圖/5M170920.jpg" alt="BT Studio 環境">
@@ -71,7 +66,7 @@
   <!-- ═══ SECTION 2 · 服務項目 ═══ -->
   <section id="services" class="section">
     <div class="section-header">
-      <h2>服務項目</h2>
+      <h2 data-t="services.heading"></h2>
       <div class="divider"></div>
     </div>
 
@@ -82,15 +77,10 @@
       </div>
       <div class="service-text">
         <span class="service-num">01</span>
-        <h3>韓式證件照</h3>
-        <p>以韓式美學為基底，透過專業妝髮與精準打光，呈現最自然動人的您。適合護照、簽證、履歷、各類申請文件，留下最精緻的第一印象。</p>
-        <ul>
-          <li>專業底妝造型</li>
-          <li>白、淺灰、深灰背景任選</li>
-          <li>多種尺寸輸出</li>
-          <li>高解析數位檔提供</li>
-        </ul>
-        <a href="#pricing" class="link-arrow">查看價格 →</a>
+        <h3 data-t="services.s01.title"></h3>
+        <p  data-t="services.s01.desc"></p>
+        <ul data-t="services.s01.features"></ul>
+        <a href="#pricing" class="link-arrow" data-t="services.cta_price"></a>
       </div>
     </div>
 
@@ -101,15 +91,10 @@
       </div>
       <div class="service-text">
         <span class="service-num">02</span>
-        <h3>職業肖像照／形象照</h3>
-        <p>為醫師、律師、企業主管、求職者打造品牌形象。以嚴謹的光線控制與精確後製技術，呈現您最具氣場的一面，讓形象成為最有力的名片。</p>
-        <ul>
-          <li>一對一形象顧問諮詢</li>
-          <li>專業燈光配置</li>
-          <li>精修後製處理</li>
-          <li>企業批量優惠方案</li>
-        </ul>
-        <a href="#pricing" class="link-arrow">查看價格 →</a>
+        <h3 data-t="services.s02.title"></h3>
+        <p  data-t="services.s02.desc"></p>
+        <ul data-t="services.s02.features"></ul>
+        <a href="#pricing" class="link-arrow" data-t="services.cta_price"></a>
       </div>
     </div>
 
@@ -120,15 +105,10 @@
       </div>
       <div class="service-text">
         <span class="service-num">03</span>
-        <h3>全家福／情侶／朋友／個人寫真</h3>
-        <p>將生命中最珍貴的相聚時刻定格為永恆畫面。獨立包場空間，讓您自在放鬆，自然呈現最真實的情感與溫度。</p>
-        <ul>
-          <li>獨立拍攝時段，全程包場</li>
-          <li>多場景與風格選擇</li>
-          <li>專屬造型搭配建議</li>
-          <li>精修數位檔案交付</li>
-        </ul>
-        <a href="#pricing" class="link-arrow">查看價格 →</a>
+        <h3 data-t="services.s03.title"></h3>
+        <p  data-t="services.s03.desc"></p>
+        <ul data-t="services.s03.features"></ul>
+        <a href="#pricing" class="link-arrow" data-t="services.cta_price"></a>
       </div>
     </div>
 
@@ -139,15 +119,10 @@
       </div>
       <div class="service-text">
         <span class="service-num">04</span>
-        <h3>妝髮造型服務</h3>
-        <p>由造型師 TiTi 及專業團隊親自操刀，依據您的臉型、膚色與拍攝風格量身打造整體造型，讓您在鏡頭前煥然一新，自信呈現最美的自己。</p>
-        <ul>
-          <li>一對一造型諮詢</li>
-          <li>韓系自然妝／精緻妝</li>
-          <li>專業髮型吹整與上捲</li>
-          <li>可單獨加購或搭配任一方案</li>
-        </ul>
-        <a href="#pricing" class="link-arrow">查看價格 →</a>
+        <h3 data-t="services.s04.title"></h3>
+        <p  data-t="services.s04.desc"></p>
+        <ul data-t="services.s04.features"></ul>
+        <a href="#pricing" class="link-arrow" data-t="services.cta_price"></a>
       </div>
     </div>
   </section>
@@ -156,16 +131,16 @@
   <!-- ═══ SECTION 3 · 作品展示 ═══ -->
   <section id="portfolio" class="section section--dark">
     <div class="section-header">
-      <h2>作品展示</h2>
+      <h2 data-t="portfolio.heading"></h2>
       <div class="divider divider--light"></div>
     </div>
 
     <div class="portfolio-tabs">
-      <button class="tab active" data-cat="all">全部</button>
-      <button class="tab" data-cat="portrait">專業人像</button>
-      <button class="tab" data-cat="corporate">醫師／企業形象</button>
-      <button class="tab" data-cat="id">韓式證件照</button>
-      <button class="tab" data-cat="family">家庭寫真</button>
+      <button class="tab active" data-cat="all"       data-t="portfolio.tab_all"></button>
+      <button class="tab"        data-cat="portrait"  data-t="portfolio.tab_portrait"></button>
+      <button class="tab"        data-cat="corporate" data-t="portfolio.tab_corporate"></button>
+      <button class="tab"        data-cat="id"        data-t="portfolio.tab_id"></button>
+      <button class="tab"        data-cat="family"    data-t="portfolio.tab_family"></button>
     </div>
 
     <div class="portfolio-grid">
@@ -212,92 +187,67 @@
   <!-- ═══ SECTION 4 · 價格與方案 ═══ -->
   <section id="pricing" class="section">
     <div class="section-header">
-      <h2>價格與方案</h2>
+      <h2 data-t="pricing.heading"></h2>
       <div class="divider"></div>
-      <p class="section-sub">質感價目表</p>
+      <p class="section-sub" data-t="pricing.subheading"></p>
     </div>
 
     <div class="pricing-grid">
       <!-- 韓式證件照 -->
       <div class="pricing-card">
         <div class="pricing-icon">📸</div>
-        <h3>韓式證件照</h3>
-        <div class="price">NT$ <span>600</span> 起</div>
-        <ul>
-          <li>專業打光拍攝</li>
-          <li>妝髮造型服務</li>
-          <li>背景顏色任選</li>
-          <li>數位檔案提供</li>
-          <li>多種尺寸輸出</li>
-        </ul>
-        <a href="#booking" class="btn btn--gold">立即預約</a>
+        <h3  data-t="pricing.p01.title"></h3>
+        <div class="price" data-t="pricing.p01.price"></div>
+        <ul  data-t="pricing.p01.features"></ul>
+        <a href="#booking" class="btn btn--gold" data-t="pricing.cta"></a>
       </div>
 
       <!-- 形象照 · featured -->
       <div class="pricing-card pricing-card--featured">
-        <div class="pricing-badge">最受歡迎</div>
+        <div class="pricing-badge" data-t="pricing.p02.badge"></div>
         <div class="pricing-icon">👔</div>
-        <h3>職業形象照</h3>
-        <div class="price">NT$ <span>1,500</span> 起</div>
-        <ul>
-          <li>形象顧問諮詢</li>
-          <li>專業燈光配置</li>
-          <li>整體造型建議</li>
-          <li>精修後製處理</li>
-          <li>高解析數位檔</li>
-        </ul>
-        <a href="#booking" class="btn btn--gold">立即預約</a>
+        <h3  data-t="pricing.p02.title"></h3>
+        <div class="price" data-t="pricing.p02.price"></div>
+        <ul  data-t="pricing.p02.features"></ul>
+        <a href="#booking" class="btn btn--gold" data-t="pricing.cta"></a>
       </div>
 
       <!-- 妝髮加購 -->
       <div class="pricing-card">
         <div class="pricing-icon">✨</div>
-        <h3>妝髮造型加購</h3>
-        <div class="price">歡迎<span>諮詢</span></div>
-        <ul>
-          <li>一對一造型諮詢</li>
-          <li>韓系自然妝</li>
-          <li>精緻妝容升級</li>
-          <li>專業髮型設計</li>
-          <li>可搭配任一方案</li>
-        </ul>
-        <a href="#booking" class="btn btn--gold">立即預約</a>
+        <h3  data-t="pricing.p03.title"></h3>
+        <div class="price" data-t="pricing.p03.price"></div>
+        <ul  data-t="pricing.p03.features"></ul>
+        <a href="#booking" class="btn btn--gold" data-t="pricing.cta"></a>
       </div>
     </div>
 
-    <p class="pricing-note">
-      ＊ 詳細方案內容、加購項目及企業批量優惠，歡迎透過 LINE 與我們諮詢，將為您量身規劃最適合的服務組合。
-    </p>
+    <p class="pricing-note" data-t="pricing.note"></p>
   </section>
 
 
   <!-- ═══ SECTION 5 · 預約導流 ═══ -->
   <section id="booking" class="section section--navy">
     <div class="booking-inner">
-      <h2>預約諮詢</h2>
+      <h2 data-t="booking.heading"></h2>
       <div class="divider divider--gold"></div>
-      <p>
-        歡迎透過 LINE 與我們聯繫，我們將為您安排專屬拍攝時段。<br>
-        全預約制，獨立時段，確保您的隱私與最佳拍攝體驗。
-      </p>
+      <p data-t="booking.desc"></p>
       <div class="booking-line">
-        <div class="line-id">LINE ID：@lcx1786x</div>
-        <a href="https://lin.ee/8l7pXm1" target="_blank" rel="noopener" class="btn btn--gold btn--lg">
-          加入 LINE 立即預約
-        </a>
+        <div class="line-id" data-t="booking.line_id"></div>
+        <a data-href="line" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-t="booking.cta"></a>
       </div>
       <div class="booking-info">
         <div>
-          <strong>地址</strong>
-          <span>台中市南屯區惠中路三段33號5樓</span>
+          <strong data-t="booking.address_label"></strong>
+          <span   data-t="booking.address"></span>
         </div>
         <div>
-          <strong>電話</strong>
-          <span>0905-333289</span>
+          <strong data-t="booking.phone_label"></strong>
+          <span   data-t="booking.phone"></span>
         </div>
         <div>
-          <strong>Email</strong>
-          <span>btstudio.tw@gmail.com</span>
+          <strong data-t="booking.email_label"></strong>
+          <span   data-t="booking.email"></span>
         </div>
       </div>
     </div>
@@ -309,36 +259,32 @@
     <div class="about-inner">
       <div class="about-text">
         <div class="section-header section-header--left">
-          <h2>關於 BT Studio</h2>
+          <h2 data-t="about.heading"></h2>
           <div class="divider"></div>
         </div>
-        <h3>白棠影像造型工作室</h3>
-        <p>
-          BT Studio 創立於2019年，由攝影師 Jun 與造型師 TiTi 共同建立。攝影師擁有十年以上的專業攝影經驗，曾獲多項國際攝影大獎；造型師團隊資歷深厚，專精彩妝與整體造型搭配美學。
-        </p>
-        <p>
-          在 BT Studio，我們相信每個值得紀念的時刻都應該被完美捕捉。我們不只是按下快門，更注重真摯情感的傳達、獨特個性的展現，以及自然光影與細節的完美講究。
-        </p>
+        <h3 data-t="about.subtitle"></h3>
+        <p  data-t="about.para1"></p>
+        <p  data-t="about.para2"></p>
         <div class="about-features">
           <div class="feature">
-            <span class="feature-icon">📍</span>
+            <span class="feature-icon" data-t="about.f1_icon"></span>
             <div>
-              <strong>台中南屯</strong>
-              <p>台中市南屯區惠中路三段33號5樓</p>
+              <strong data-t="about.f1_title"></strong>
+              <p      data-t="about.f1_text"></p>
             </div>
           </div>
           <div class="feature">
-            <span class="feature-icon">🔒</span>
+            <span class="feature-icon" data-t="about.f2_icon"></span>
             <div>
-              <strong>全預約制・獨立空間</strong>
-              <p>獨立時段包場，隱私感・高級感・專業感</p>
+              <strong data-t="about.f2_title"></strong>
+              <p      data-t="about.f2_text"></p>
             </div>
           </div>
           <div class="feature">
-            <span class="feature-icon">⭐</span>
+            <span class="feature-icon" data-t="about.f3_icon"></span>
             <div>
-              <strong>專業團隊</strong>
-              <p>資深攝影師・造型師・後製修圖師・形象設計師</p>
+              <strong data-t="about.f3_title"></strong>
+              <p      data-t="about.f3_text"></p>
             </div>
           </div>
         </div>
@@ -356,17 +302,18 @@
   <!-- ═══ FOOTER ═══ -->
   <footer>
     <img src="source/BT網站資料/BT Studio/BT LOGO 1png.png" alt="BT Studio" class="footer-logo">
-    <p>© 2024 BT Studio 白棠影像造型工作室・All rights reserved.</p>
+    <p data-t="footer.copyright"></p>
     <div class="footer-links">
-      <a href="mailto:btstudio.tw@gmail.com">btstudio.tw@gmail.com</a>
+      <a data-href="email" data-t="booking.email"></a>
       <span>|</span>
-      <a href="tel:0905333289">0905-333289</a>
+      <a data-href="phone" data-t="booking.phone"></a>
       <span>|</span>
-      <a href="https://lin.ee/8l7pXm1" target="_blank" rel="noopener">LINE 預約</a>
+      <a data-href="line" target="_blank" rel="noopener" data-t="footer.line_cta"></a>
     </div>
   </footer>
 
 
+  <script src="content.js"></script>
   <script>
     // Sticky nav
     const navbar   = document.getElementById('navbar');
